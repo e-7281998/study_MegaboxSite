@@ -13,6 +13,7 @@
 }
 #banner {
     position: relative;
+    overflow: hidden;
 }
 /* 가운데 영역 */
 .container {
