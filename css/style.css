@@ -1,4 +1,4 @@
-/* 배너 (+swiper.js) */
+/* 영화 차트 구조 */
 @charset "utf-8";
 
 /* 레이아웃 */
@@ -260,6 +260,117 @@
     color: #fff;
 }
 
+/* 무비 */
+.movie {
+    padding: 100px 0;
+}
+.movie_title {
+    margin-bottom: 60px;
+}
+.movie_title ul {
+    overflow: hidden;
+    width: 848px;
+    margin: 0 auto;
+}
+.movie_title li {
+    width: 210px;
+    float: left;
+    text-align: center;
+    border: 1px solid #c4c4c4;
+    margin-right -1px;
+}
+.movie_title li.active a {
+    background: #666;
+    color: #fff;
+}
+.movie_title li a {
+    display: block;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #666;
+    font-weight: 700;
+}
+.movie_chart {
+    height: 592px;
+}
+.movie_chart > div {
+    overflow: hidden;
+}
+.movie_chart > div > div {
+    float: left;
+    width: 292px; height: 592px;
+    margin-right: 18px;
+}
+.movie_chart > div > div:last-child {
+    margin-right: 0;
+}
+.movie_chart > div > div .poster {
+    position: relative;
+}
+.movie_chart > div > div .poster img {
+    display: block;
+}
+.movie_chart > div > div .poster .rank {
+    position: absolute;
+    left: 0; top: 17px;
+    width: 50px; height: 50px;
+    line-height: 50px;
+    background: #38116a;
+    text-align: center;
+}
+.movie_chart > div > div .poster .rank strong {
+    color: #fff;
+}
+.movie_chart > div > div .poster .mx {
+    position: absolute;
+    right: 17px; top: 17px;
+}
+.movie_chart > div > div .poster .mx span {
+    width: 103px; height: 25px;
+    display: block;
+}
+.movie_chart > div > div .poster .mx .m {
+    background-position: 0px -75px;
+}
+.movie_chart > div > div .poster .mx .b {
+    background-position: 0px -100px;
+}
+.movie_chart > div > div .info {
+    background: #fff;
+    padding: 17px;
+    border: 1px solid #d9d9d9;
+}
+.movie_chart > div > div .info h3 {
+    color: #333;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.movie_chart > div > div .info h3 strong {}
+.movie_chart > div > div .info h3 span {
+    vertical-align: -2px;
+    width: 29px; height: 29px;
+    display: inline-block;
+    margin-top: 9px;
+}
+.movie_chart > div > div .info h3 span.all {
+    background-position: -88px -126px
+}
+.movie_chart > div > div .info .info_btn a {
+    display: inline-block;
+    background: #f2f2f2;
+    font-size: 18px;
+    padding: 15px 30px;
+}
+.movie_chart > div > div .info h3 span.a12 {
+    background-position: -0px -126px
+}
+.movie_chart > div > div .info h3 span.a15 {
+    background-position: -29px -126px
+}
+.movie_chart > div > div .info h3 span.a19 {
+    background-position: -58px -126px
+}
 
 /* 미디어 쿼리 */
 @media (max-width: 1290px){
