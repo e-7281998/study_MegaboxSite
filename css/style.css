@@ -1,4 +1,4 @@
-/* 영화 차트 구조 */
+/* 영화 차트 탭 메뉴 */
 @charset "utf-8";
 
 /* 레이아웃 */
@@ -317,9 +317,13 @@
     line-height: 50px;
     background: #38116a;
     text-align: center;
+    font-size: 22px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
 }
 .movie_chart > div > div .poster .rank strong {
     color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+
 }
 .movie_chart > div > div .poster .mx {
     position: absolute;
