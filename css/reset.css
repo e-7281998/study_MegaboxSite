@@ -1,4 +1,4 @@
-/* 영화 차트 구조 */
+/* 새로운 영화 */
 @charset "utf-8";
 
 /* 여백 초기화 */
@@ -47,3 +47,57 @@ video,img {width: 100%;}
     only screen and (min-resolution: 1.5ppx){
         .icon {background-image: url(../img/icon@2.png); background-size: 500px; }
     }
+
+/* input style */
+iniput { background-image: none; }
+input [type=button],
+input [type=reset],
+input [type=text],
+input [type=password],
+input [type=submit],
+input [submit=search],
+input [submit=tel],
+input [submit=email]{
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+input [type=search]::-webkit-search-cancel-button,
+input [type=search]::-webkit-search-decoraiton {
+    -webkit-appearance: none
+}
+input:checked[type=ckeckbox]{
+    background-color: #666;
+    -webkit-appearance: checkbox
+}
+/* 셀렉트 메뉴 메인 스타일 */
+.ui_select2 {
+    width: 100%;
+    box-sizing: border-box;
+    background: #2c2f34;
+    color: #fff;
+    display: inline-block;
+    height: 36px;
+    border: 0 none;
+    padding: 0 10px;
+    font-family: inherit;
+    font-size: inherit;
+    vertical-align: middle;
+    text-align: left;
+    white-space: nowrap;
+    margin: 0;
+    background: #2c2f34 url(../img/down.svg) no-repeat right 10px center;
+    background-size: 10px;
+    -webkit-appearance: none;
+    -mox-appearance: none;
+    appearance: none;
+}
+
+/* 메인 텍스트 박스 스타일1 */
+.ui_input3 {
+    background: #2c2f34;
+    color: #fff;
+    border: 0;
+    width: 100%;
+    height: 36px;
+    padding: 0 10px;
+}
