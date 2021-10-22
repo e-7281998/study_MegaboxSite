@@ -1,4 +1,4 @@
-/* 오프닝 영역 */
+/* 새로운 영화 */
 @charset "utf-8";
 
 /* 레이아웃 */
@@ -25,7 +25,7 @@
     background: url(../img/bg01.jpg) no-repeat center top;
     background-size: cover;
 }
-
+#new {}
 
 /* 가운데 영역 */
 .container {
@@ -509,6 +509,128 @@
     font-weight: bold;
 }
 
+/* 새로운 영화 */
+.new {
+    padding: 100px 0;
+    position: relative;
+}
+.new h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.new .new_left {
+    position: relative;
+    height: 500px;
+    margin-right: 423px;
+    background: #ccc url(../img/new01.jpg) center center;
+    background-size: cover;
+}
+.new .new_left .play{
+    position: absolute;
+    top: 50%; left: 50%;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 90px;
+    transform: translate(-50%, -50%);
+}
+
+.new .new_right {
+    position: absolute;
+    right: 0; top: 165px;
+    width: 400px;
+    height: 500px;
+    background: #f0f0f0;
+    padding: 34px;
+    box-sizing: border-box;
+}
+.new .new_right .title {
+    font-size: 28px;
+    color: #000;
+}
+.new .new_right .release {
+    font-size: 12px;
+    color: #333;
+}
+.new .new_right .star {
+    padding: 13px 0;
+}
+.new .new_right .star strong {
+    font-size: 15px;
+    padding-left: 5px;
+}
+.new .new_right .star span {
+    display: inline-block;
+    width: 20px; height: 20px; 
+    vertical-align: -3px;
+}
+.new .new_right .star span.star1 {
+    background-position: -393px 0;
+}
+.new .new_right .star span.star2 {
+    background-position: -412px 0;
+}
+.new .new_right .star span.star0 {
+    background-position: -374px 0;
+}
+.new .new_right .summary {
+    font-size: 14px;
+}
+.new .new_right .summary .genre {
+    padding-bottom: 3px; 
+}
+.new .new_right .summary .age {
+    padding-bottom: 10px; 
+}
+.new .new_right .summary .desc {
+    height: 104px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.new .new_right .select {
+    overflow: hidden;
+}
+.new .new_right .select .s1 {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+    background: #000;
+}
+.new .new_right .select .s2 {
+    float: left;
+    width: 49%;
+    background: #000;
+}
+.new .new_right .select .s3 {
+    float: left;
+    width: 100%;
+    margin-top: 2%;
+}
+.new .new_right .btn {
+    margin-top: 2px;
+    text-align: center;
+}
+.new .new_right .btn a {
+    float: left;
+    width: 49%;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 2%;
+    padding: 10px 30px 12px 30px;
+}
+.new .new_right .btn a.white {
+    background-color: #fff;
+    margin-right: 2%;
+    color: #3a0e6a;
+    border: 1px solid #3a0e8a;
+}
+.new .new_right .btn a.purple {
+    background-color: #3a0e6a;
+    color: #fff;
+    border: 1px solid #6e40ca;
+}
+
 /* 미디어 쿼리 */
 @media (max-width: 1290px){
     .container { width: 100%; }
@@ -547,7 +669,9 @@
     .movie_title li { width: 25%; box-sizing: border-box; }
 
     .movie_chart > div > div > div .poster .mx { display: none; }
-
+    
+    .new .new_left { margin-right: 0; height: 400px; }
+    .new .new_right { position: relative; top: 0; width: 100%; height: auto; }
 }
 @media (max-width: 768px){
     body { background: #d9d7e0; }
@@ -576,6 +700,11 @@
     .event h2 { font-size: 24px; font-weight: 700; }
     .event .event_left { width: 100%; margin-right: 0;}
     .event .event_right { display: none; }
+ 
+    #new .row { padding:  0 24px; }
+    .new { padding: 24px; background: #fff; }
+    .new h2 { font-size: 24px; font-weight: 700; height: 27px; margin-bottom: 20px; padding-bottom: 10px;}
+    .new .new_right { padding: 24px;}
 }
 @media (max-width: 600px) {
     .slider { height: 400px; }
@@ -608,6 +737,16 @@
     #event .row { padding: 8px; }
     .event { padding: 16px; }
     .event h2 { font-size: 18px; margin-bottom: 8px; }
+    
+    #new .row { padding: 0 8px;}
+    .new { padding: 16px; margin-top: 8px; }
+    .new h2 { font-size: 18px; margin-bottom: 0; }
+    .new .new_left { height: 300px; }
+    .new .new_right { padding: 17px; }
+    .new .new_right .title { font-size: 22px; }
+    .new .new_right .star { padding: 9px 0; }
+    .new .new_right .select .s1 { width: 100%; margin-right: 0; margin-bottom: 2%; }
+    .new .new_right .select .s2 { width: 100%;  }
 }
 @media (max-width: 480px){
     
