@@ -1,5 +1,24 @@
-/*  푸터 */
+/*  탭메뉴, 스킵메뉴  */
 @charset "utf-8";
+
+/* 스킵 메뉴*/
+#skip {
+    position: relative;
+}
+#skip a {
+    position: absolute;
+    left: 0; top: -40px; 
+    width: 140px; 
+    border: 1px solid #fff;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    line-height: 30px;
+}
+#skip a:active,
+#skip a:focus {
+    top: 0;
+}
 
 /* 레이아웃 */
 #mNav {
@@ -719,6 +738,11 @@
 .notice ul li ul li dd {
     color: #777;
     padding:-top: 3px;
+}
+.notice ul li ul li a {
+    width: 100%; 
+    border: 0;
+    padding: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
